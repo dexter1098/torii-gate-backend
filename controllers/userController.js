@@ -1,7 +1,7 @@
 const USER = require("../models/user");
 const bcrypt = require("bcryptjs");
 const generateToken = require("../helpers/generateToken");
-const { sendWelcomeEmail } = require("../email/sendEmail");
+const { sendWelcomeEmail, sendResetEmail } = require("../email/sendEmail");
 const jwt = require("jsonwebtoken");
 
 const handleRegister = async (req, res) => {
@@ -163,6 +163,7 @@ const resendVerificationEmail = async (req, res) => {
     user.verificationTokenExpires = tokenExpires;
     await user.save();
     //Send an email
+
     const clientUrl = `${process.env.FRONTEND_URL}/verify-email/${newToken}`;
     await sendWelcomeEmail({
       email: user.email,
@@ -174,9 +175,82 @@ const resendVerificationEmail = async (req, res) => {
       .status(201)
       .json({ success: true, message: "Verification Email sent" });
   } catch (error) {
+    console.error("Error resending email:", error);
+    res.status(500).json({ message: error.message });
+  }
+};
+
+const handleForgotPassword = async (req, res) => {
+  const { email } = req.body;
+  if (!email) {
+    return res.status(400).json({ message: "Email is required" });
+  }
+
+  try {
+    const user = await USER.findOne({ email });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    const token = generateToken();
+    user.resetPasswordToken = token;
+    user.resetPasswordExpires = Date.now() + 60 * 60 * 1000; // 1hr
+    await user.save();
+
+    //send the mail
+    const clientUrl = `${process.env.FRONTEND_URL}/reset-password/${token}`;
+    await sendResetEmail({
+      fullName: user.fullName,
+      email: user.email,
+      clientUrl,
+    });
+
+    res.status(200).json({
+      success: true,
+      token,
+      message: "Password reset link sent to your mail",
+    });
+  } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
   }
 };
 
-module.exports = { handleRegister, handleVerifyEmail, handleLogin, resendVerificationEmail };
+const handleResetPassword = async (req, res) => {
+  const { token, password } = req.body;
+  if (!token || !password) {
+    return res.status(400), json({ message: "Provide token and new password" });
+  }
+  try {
+    const user = await USER.findOne({
+      resetPasswordToken: token,
+      resetPasswordExpires: { $gt: Date.now() },
+    });
+    if (!user) {
+      return res
+        .status(404)
+        .json({ message: "Invalid or expired link, try again" });
+    }
+    const salt = await bcrypt.genSalt();
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    user.password = hashedPassword;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpires = undefined;
+
+    await user.save();
+    res
+      .status(200)
+      .json({ success: true, message: "Password reset successfully" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  }
+};
+module.exports = {
+  handleRegister,
+  handleVerifyEmail,
+  handleLogin,
+  resendVerificationEmail,
+  handleForgotPassword,
+  handleResetPassword,
+};
