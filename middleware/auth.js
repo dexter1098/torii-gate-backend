@@ -20,7 +20,7 @@ const isloggedin = async (req, res, next) => {
     req.user = {
       email: payload.email,
       role: payload.role,
-      userId:payload.userId
+      userId: payload.userId,
     };
     next();
   } catch (error) {
@@ -37,8 +37,8 @@ const requirePermissions = (...roles) => {
         .status(403)
         .json({ message: "Unauthorized to access this route" });
     }
+    next();
   };
-  next();
 };
 
 module.exports = { isloggedin, requirePermissions };

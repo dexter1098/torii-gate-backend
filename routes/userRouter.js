@@ -7,7 +7,7 @@ const {
   handleForgotPassword,
   handleResetPassword,
   handleUpdateUser,
-  handleGetUser
+  handleGetUser,
 } = require("../controllers/userController");
 const { isloggedin, requirePermissions } = require("../middleware/auth");
 
@@ -17,7 +17,7 @@ router.post("/login", handleLogin);
 router.post("/resend-email/:token", resendVerificationEmail);
 router.post("/forgot-password", handleForgotPassword);
 router.post("/reset-password", handleResetPassword)
-router.get("/user", handleGetUser)
-router.patch("/user",isloggedin, requirePermissions (["landlord"]), handleUpdateUser)
+router.get("/user",isloggedin, handleGetUser)
+router.patch("/user",isloggedin, requirePermissions ("landlord"), handleUpdateUser)
 
 module.exports = router;

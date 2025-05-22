@@ -119,7 +119,7 @@ const handleLogin = async (req, res) => {
     }
     // generate a token  (validity , period )
     const token = jwt.sign(
-      { email: user.email, role: user.role, userId: user._id},
+      { email: user.email, role: user.role, userId: user._id },
       process.env.JWT_SECRET,
       { expiresIn: "3 days" }
     );
@@ -132,7 +132,7 @@ const handleLogin = async (req, res) => {
         email: user.email,
         profilePicture: user.profilePicture,
         role: user.role,
-        phoneNumber: user.phoneNumber
+        phoneNumber: user.phoneNumber,
       },
     });
   } catch (error) {
@@ -249,11 +249,40 @@ const handleResetPassword = async (req, res) => {
 };
 
 const handleGetUser = async (req, res) => {
-  res.send("get user");
+  const{userId} = req.user
+  try { 
+    const user = await USER.findById(userId)
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    res.status(200).json({success: true, user})
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.message });
+  }
 };
 
 const handleUpdateUser = async (req, res) => {
-  res.send("change user");
+  const { fullName, phoneNumber } = req.body;
+  const { userId } = req.user;
+  if (!fullName || !phoneNumber) {
+    return res
+      .status(400)
+      .json({ message: "Provide fullName and phoneNumber" });
+  }
+  try {
+    const user = await USER.findById(userId);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    user.fullName = fullName;
+    user.phoneNumber = phoneNumber;
+    await user.save();
+    res.status(200).json({ success: "User Updated Sucessfully", user });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.message });
+  }
 };
 
 module.exports = {
