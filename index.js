@@ -3,10 +3,11 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
-const cloudinary = require('cloudinary').v2;
+const cloudinary = require("cloudinary").v2;
 const fileUpload = require("express-fileupload");
 const PORT = process.env.PORT || 3000;
 const userRouter = require("./routes/userRouter");
+const propertyRouter = require("./routes/PropertyRouter");
 //middleware
 app.use(express.json());
 app.use(cors());
@@ -30,6 +31,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/auth", userRouter);
+app.use("/api/property", propertyRouter);
 
 // error route
 app.use((req, res) => {

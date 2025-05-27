@@ -1,0 +1,404 @@
+[
+  {
+    "title": "Modern 2 Bedroom Flat in Lekki",
+    "description": "Spacious flat with all modern amenities in a secure estate.",
+    "price": 1200000,
+    "location": "Lekki, Lagos",
+    "bedroom": 2,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 2,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/3b1cc0d73891c53278ece3b3530e0db0-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/105350e2f49a380a7a993bb3807f0991-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/8d91718df152fa864b58d72d9df840f3-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/105350e2f49a380a7a993bb3807f0991-sc_1920_1280.webp"
+     
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Affordable Self Contain in Yaba",
+    "description": "Neatly tiled self contain close to Unilag gate.",
+    "price": 150000,
+    "location": "Yaba, Lagos",
+    "bedroom": 1,
+    "livingRoom": 0,
+    "kitchen": 1,
+    "toilet": 1,
+    "paymentPeriod": "monthly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/1b9b81a74f20bfc79159b08372fb87e9-cc_ft_768.webp",
+      "https://photos.zillowstatic.com/fp/634d1e0e07352efa85eb602a76fc308f-cc_ft_768.webp",
+      "https://photos.zillowstatic.com/fp/96a767585a56410e992deb8fd4a23481-cc_ft_1536.webp",
+      "https://photos.zillowstatic.com/fp/1d9d185c210fcf0947193bd1b16e1bd2-cc_ft_1536.webp",
+      "https://photos.zillowstatic.com/fp/32c5de52ad1fa0d94395fe57a521a2a1-cc_ft_768.webp",
+      "https://photos.zillowstatic.com/fp/22f0115b9f727d6e83b095297bb86056-cc_ft_1536.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "3 Bedroom Duplex in Wuse",
+    "description": "Well-maintained duplex with parking and water supply.",
+    "price": 2500000,
+    "location": "Wuse, Abuja",
+    "bedroom": 3,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 3,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/81b54422f88b31eff86f24c7380705c3-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/cc5b36b126da330bce84d391ccdc8784-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/cb71218c64d6614a4260294a7d035406-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/d640d04cbd0827e7d58b5acd20fe2cca-sc_1920_1280.webp"
+      
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Studio Apartment in Surulere",
+    "description": "Compact and affordable studio with ensuite toilet.",
+    "price": 100000,
+    "location": "Surulere, Lagos",
+    "bedroom": 1,
+    "livingRoom": 0,
+    "kitchen": 0,
+    "toilet": 1,
+    "paymentPeriod": "monthly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/fbffc8895866fbe99290ef8c3c86b904-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/827b952d14705cdfe983b5d56b88d7d1-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/c4dea3b975dfb0922c15ddea41884ab3-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/5997fa8a38aa52d2cc85065a0078d821-sc_1920_1280.webp"
+      
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "4 Bedroom Duplex in Port Harcourt",
+    "description": "Luxury duplex in a serene environment with borehole water.",
+    "price": 3000000,
+    "location": "GRA, Port Harcourt",
+    "bedroom": 4,
+    "livingRoom": 2,
+    "kitchen": 1,
+    "toilet": 4,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/fcf0b562256a827f571ed12929be973b-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/9f12fd97220f1428eb50b057d9cf8b18-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/d136d15626b31133e316ad7570e5e496-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/7c59cb9e1882146726ba09563a176ced-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/a66aa9ec3115cabf75331093c15636c4-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Mini Flat in Ajah",
+    "description": "Comfortable mini flat with prepaid meter and balcony.",
+    "price": 300000,
+    "location": "Ajah, Lagos",
+    "bedroom": 1,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 1,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/72595e18da8496457d194bcc9f5537c9-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/dfd3eedbee609485547e2962d7ac992a-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/d2b4e34a574deeb57176da69f1262cab-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/5ead82e5e87422edd4da655026f7ed73-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/67a6d11028e2154d6fa541aac875be82-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/68133035587a55ff24feeca37f5ffc7c-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "2 Bedroom Flat in Gwarinpa",
+    "description": "Well-finished flat in a gated estate.",
+    "price": 1800000,
+    "location": "Gwarinpa, Abuja",
+    "bedroom": 2,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 2,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/a027bd1138dd8f1a6e58459043145a2c-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/24471342d6e9ec4f450a8cc4ec4cb61d-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/c34a4a4bccb24a2c7b696a13ac788d9b-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/08c7d6e186be1445a1ef59669e970561-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/08c7d6e186be1445a1ef59669e970561-sc_1920_1280.webp"
+      
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Self Contain in Ikorodu",
+    "description": "Affordable room and parlor self contain.",
+    "price": 50000,
+    "location": "Ikorodu, Lagos",
+    "bedroom": 1,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 1,
+    "paymentPeriod": "monthly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/d8180a9438d1e92ed3a318215a53730b-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/758c4fa9661dc0a453281a0f71ab401a-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/ffcfb42aa5e7448e7be96139cf6877ee-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/1c5a95631d0ff00b0d224eafb6832809-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/afb9c9cbda1735cb4737a1c125f7db4b-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "3 Bedroom Apartment in Asaba",
+    "description": "Comfortable apartment with modern kitchen.",
+    "price": 850000,
+    "location": "Asaba, Delta State",
+    "bedroom": 3,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 3,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/2ef86ba04634933647c0f0cdf15cdba1-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/bbe61178d56e0fed9246c6d3bf726120-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/33e8b12d3f0a0a0b80c62cb3099f60b6-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/9f4bb3435b8638f595883654fcf5e7f4-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Mini Flat in Festac",
+    "description": "Tiled mini flat with kitchen cabinet and wardrobe.",
+    "price": 350000,
+    "location": "Festac, Lagos",
+    "bedroom": 1,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 1,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/814f0e958d17ae9a6355f8cb2bc6479e-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/93c10d0989decb84ac01f11d61294aa9-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/1e4ffca9a1adb46372ad551c56d1632c-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/118e9917e8e7b0fa5e6f04bb2f0a3dc1-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/ab548bed62bcc21ddd9dc34667d47401-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "2 Bedroom Flat in Owerri",
+    "description": "Clean and spacious flat with POP ceiling.",
+    "price": 400000,
+    "location": "Owerri, Imo State",
+    "bedroom": 2,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 2,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/891ddebc97ebca419ddd3ad36d2f4985-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/83dc6073b7ac6f4a8a854c1e29ebc5a2-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/b84efbbb60600c9598782be78504bfda-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/0e6f7822b8c3db619a0bcefd74f66be5-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/3beec9e8ee306a0124efbae6f270994f-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/76ec5a6dd9ea331653a5a59568a4018b-sc_1920_1280.webp"
+      
+
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Single Room in Mushin",
+    "description": "Basic single room, no kitchen.",
+    "price": 20000,
+    "location": "Mushin, Lagos",
+    "bedroom": 1,
+    "livingRoom": 0,
+    "kitchen": 0,
+    "toilet": 1,
+    "paymentPeriod": "monthly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/3b1cc0d73891c53278ece3b3530e0db0-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/105350e2f49a380a7a993bb3807f0991-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/8d91718df152fa864b58d72d9df840f3-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/105350e2f49a380a7a993bb3807f0991-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "4 Bedroom Duplex in Enugu",
+    "description": "Spacious duplex with fenced compound and borehole.",
+    "price": 2000000,
+    "location": "Enugu, Enugu State",
+    "bedroom": 4,
+    "livingRoom": 2,
+    "kitchen": 1,
+    "toilet": 4,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/72595e18da8496457d194bcc9f5537c9-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/dfd3eedbee609485547e2962d7ac992a-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/d2b4e34a574deeb57176da69f1262cab-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/5ead82e5e87422edd4da655026f7ed73-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/67a6d11028e2154d6fa541aac875be82-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/68133035587a55ff24feeca37f5ffc7c-sc_1920_1280.webp"
+    ],
+    "availability": "rented",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Luxury 3 Bedroom Flat in Maitama",
+    "description": "Exquisite finishing, serviced with generator and water.",
+    "price": 3500000,
+    "location": "Maitama, Abuja",
+    "bedroom": 3,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 3,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/d8180a9438d1e92ed3a318215a53730b-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/758c4fa9661dc0a453281a0f71ab401a-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/ffcfb42aa5e7448e7be96139cf6877ee-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/1c5a95631d0ff00b0d224eafb6832809-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/afb9c9cbda1735cb4737a1c125f7db4b-sc_1920_1280.webp"
+    ],
+    "availability": "rented",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "2 Bedroom Flat in Ilorin",
+    "description": "Furnished apartment with tiled floors and borehole.",
+    "price": 550000,
+    "location": "Ilorin, Kwara State",
+    "bedroom": 2,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 2,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/fbffc8895866fbe99290ef8c3c86b904-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/827b952d14705cdfe983b5d56b88d7d1-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/c4dea3b975dfb0922c15ddea41884ab3-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/5997fa8a38aa52d2cc85065a0078d821-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Room Self Contain in Agege",
+    "description": "Newly built self contain close to the main road.",
+    "price": 70000,
+    "location": "Agege, Lagos",
+    "bedroom": 1,
+    "livingRoom": 0,
+    "kitchen": 1,
+    "toilet": 1,
+    "paymentPeriod": "monthly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/fcf0b562256a827f571ed12929be973b-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/9f12fd97220f1428eb50b057d9cf8b18-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/d136d15626b31133e316ad7570e5e496-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/7c59cb9e1882146726ba09563a176ced-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/a66aa9ec3115cabf75331093c15636c4-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "1 Bedroom Flat in Sango Ota",
+    "description": "Gated compound, ample water and power supply.",
+    "price": 150000,
+    "location": "Sango Ota, Ogun State",
+    "bedroom": 1,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 1,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/fbffc8895866fbe99290ef8c3c86b904-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/827b952d14705cdfe983b5d56b88d7d1-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/c4dea3b975dfb0922c15ddea41884ab3-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/5997fa8a38aa52d2cc85065a0078d821-sc_1920_1280.webp"
+    ],
+    "availability": "rented",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Luxury Penthouse in Victoria Island",
+    "description": "Fully serviced penthouse with sea view.",
+    "price": 7000000,
+    "location": "Victoria Island, Lagos",
+    "bedroom": 5,
+    "livingRoom": 2,
+    "kitchen": 2,
+    "toilet": 5,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/2ef86ba04634933647c0f0cdf15cdba1-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/bbe61178d56e0fed9246c6d3bf726120-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/33e8b12d3f0a0a0b80c62cb3099f60b6-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/9f4bb3435b8638f595883654fcf5e7f4-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Shared Apartment in Akure",
+    "description": "3 Bedroom shared apartment with individual toilets.",
+    "price": 100000,
+    "location": "Akure, Ondo State",
+    "bedroom": 1,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 1,
+    "paymentPeriod": "monthly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/81b54422f88b31eff86f24c7380705c3-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/cc5b36b126da330bce84d391ccdc8784-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/cb71218c64d6614a4260294a7d035406-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/d640d04cbd0827e7d58b5acd20fe2cca-sc_1920_1280.webp"
+    ],
+    "availability": "available",
+    "landlord": "682f05647c4471d1af9d91c5"
+  },
+  {
+    "title": "Serviced Flat in Jos",
+    "description": "2 Bedroom flat with solar power and borehole.",
+    "price": 400000,
+    "location": "Jos, Plateau State",
+    "bedroom": 2,
+    "livingRoom": 1,
+    "kitchen": 1,
+    "toilet": 2,
+    "paymentPeriod": "yearly",
+    "images": [
+      "https://photos.zillowstatic.com/fp/72595e18da8496457d194bcc9f5537c9-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/dfd3eedbee609485547e2962d7ac992a-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/d2b4e34a574deeb57176da69f1262cab-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/5ead82e5e87422edd4da655026f7ed73-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/67a6d11028e2154d6fa541aac875be82-sc_1920_1280.webp",
+      "https://photos.zillowstatic.com/fp/68133035587a55ff24feeca37f5ffc7c-sc_1920_1280.webp"
+    ],
+    "availability": "rented",
+    "landlord": "682f05647c4471d1af9d91c5"
+  }
+]

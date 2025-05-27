@@ -40,7 +40,7 @@ const propertySchema = new Schema(
       min: 0,
     },
     paymentPeriod: {
-      type: Number,
+      type: String,
       enum: ["yearly", "monthly", "weekly"],
     },
     images: [String],
