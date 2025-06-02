@@ -120,7 +120,9 @@ const getAProperty = async (req, res) => {
       landlord: property.landlord._id,
       _id: { $ne: propertyId },
       availability: "available",
-    });
+    })
+      .limit(3)
+      .sort("-createdAt");
     // similar price range 20% of the property price location
     // 1000 800-1200
     const priceRange = property.price * 0.2;
