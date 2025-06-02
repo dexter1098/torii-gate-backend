@@ -5,15 +5,71 @@ const createProperty = async (req, res) => {
 };
 
 const getLandlordProperties = async (req, res) => {
-  res.send("get landlords property");
+  const { userId } = req.user;
+  const { page = 1 } = req.query;
+  const limit = 5;
+  const skip = (page - 1) * limit;
+  try {
+    const properties = await PROPERTY.find({ landlord: userId })
+      .sort("-createdAt")
+      .skip(skip)
+      .limit(limit);
+
+    //  const [total, availableProperties, rentedProperties] = await Promise.all([
+    //     PROPERTY.countDocuments({landlord:userId}),
+    //    PROPERTY.countDocuments({ landlord: userId, availability: "available" }),
+    //    PROPERTY.countDocuments({
+    //     landlord: userId,
+    //     availability: "rented",
+    //   });
+    //  ]);
+    const total = await PROPERTY.countDocuments({ landlord: userId });
+    const totalPages = Math.ceil(total / limit);
+    const availableProperties = await PROPERTY.countDocuments({
+      landlord: userId,
+      availability: "available",
+    });
+    const rentedProperties = await PROPERTY.countDocuments({
+      landlord: userId,
+      availability: "rented",
+    });
+    res.status(200).json({
+      availableProperties,
+      rentedProperties,
+      total,
+      currentPage: parseInt(page),
+      totalPages,
+      properties,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  }
 };
 
 const updatePropertyAvailability = async (req, res) => {
-  res.send("update availability");
+  const { propertyId } = req.params;
+  const { availability } = req.body;
+  if (!availability) {
+    return res.status(400).json({ message: "Provide availability" });
+  }
+  try {
+    const property = await PROPERTY.findByIdAndUpdate(propertyId);
+    property.availability = availability;
+    await property.save();
+    res.status(200).json({
+      success: true,
+      message: "status updated successfully",
+      property,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  }
 };
 
 const getAllProperties = async (req, res) => {
-  const { page = 1 , location } = req.query;
+  const { page = 1, location } = req.query;
   const limit = 12;
   const skip = (page - 1) * limit;
   try {
@@ -21,9 +77,8 @@ const getAllProperties = async (req, res) => {
       availability: "available",
     };
 
-
-    if(location) {
-        filter.location = {$regex: location, $options: 'i'}
+    if (location) {
+      filter.location = { $regex: location, $options: "i" };
     }
     const properties = await PROPERTY.find(filter)
       .sort("-createdAt")
@@ -38,6 +93,7 @@ const getAllProperties = async (req, res) => {
       totalPages,
       currentPage: parseInt(page),
       properties,
+      totalProperties,
     });
   } catch (error) {
     console.log(error);
