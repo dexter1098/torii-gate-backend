@@ -69,7 +69,7 @@ const updatePropertyAvailability = async (req, res) => {
 };
 
 const getAllProperties = async (req, res) => {
-  const { page = 1, location } = req.query;
+  const { page = 1, location, budget, type } = req.query;
   const limit = 12;
   const skip = (page - 1) * limit;
   try {
