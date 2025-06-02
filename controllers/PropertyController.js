@@ -108,7 +108,40 @@ const getAllProperties = async (req, res) => {
 };
 
 const getAProperty = async (req, res) => {
-  res.send("get a property");
+  const { propertyId } = req.params;
+  try {
+    const property = await PROPERTY.findById(propertyId).populate(
+      "landlord",
+      "fullName, profilePicture, email, phoneNumber"
+    );
+    // more from landlord
+
+    const morePropertyFromLandlord = await PROPERTY.find({
+      landlord: property.landlord._id,
+      _id: { $ne: propertyId },
+      availability: "available",
+    });
+    // similar price range 20% of the property price location
+    // 1000 800-1200
+    const priceRange = property.price * 0.2;
+    const similarProperties = await PROPERTY.find({
+      _id: { $ne: propertyId },
+      availability: "available",
+      price: {
+        $gte: property.price - priceRange,
+        $lte: property.price + priceRange,
+      },
+      location: property.location,
+    })
+      .limit(3)
+      .sort("-createdAt");
+    res
+      .status(200)
+      .json({ property, morePropertyFromLandlord, similarProperties });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  }
 };
 
 module.exports = {
