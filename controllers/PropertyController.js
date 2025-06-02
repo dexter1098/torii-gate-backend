@@ -78,7 +78,13 @@ const getAllProperties = async (req, res) => {
     };
 
     if (location) {
-      filter.location = { $regex: location, $options: "i" };
+      filter.location = { $regex: location, $options: "i" }; //
+    }
+    if (budget) {
+      filter.price = { $lte: parseInt(budget) };
+    }
+    if (type) {
+      filter.title = { $regex: type, $options: "i" };
     }
     const properties = await PROPERTY.find(filter)
       .sort("-createdAt")
